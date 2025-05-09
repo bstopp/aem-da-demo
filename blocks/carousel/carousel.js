@@ -1,4 +1,4 @@
-import { fetchPlaceholders } from '../../scripts/aem.js';
+import { fetchPlaceholders } from '../../scripts/placeholders.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 function updateActiveSlide(slide) {
@@ -24,7 +24,7 @@ function updateActiveSlide(slide) {
     if (idx !== slideIndex) {
       indicator.querySelector('button').removeAttribute('disabled');
     } else {
-      indicator.querySelector('button').setAttribute('disabled', 'true');
+      indicator.querySelector('button').setAttribute('disabled',  'true');
     }
   });
 }
