@@ -146,7 +146,7 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
-  window.dataLayer({
+  window.dataLayer.push({
     event: 'lazyLoad',
     page_name: document.title,
     page_path: window.location.pathname,
