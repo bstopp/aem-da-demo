@@ -5,9 +5,9 @@ window.dataLayer = window.dataLayer || [];
 export function pageView() {
   window.dataLayer.push({
     event: 'pageView',
-    'page_name': document.title,
-    'page_path': window.location.pathname,
-  })
+    page_name: document.title,
+    page_path: window.location.pathname,
+  });
 }
 
 async function loadGTM(i, l = 'dataLayer') {
