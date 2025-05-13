@@ -18,5 +18,9 @@ async function loadGTM(i, l = 'dataLayer') {
 }
 
 export default async function loadMartech() {
-  await loadGTM('GTM-KZHVNXXT');
+  try {
+    await loadGTM('GTM-KZHVNXXT');
+  } catch (e) {
+    console.log('Error loading GTM', e);
+  }
 }
